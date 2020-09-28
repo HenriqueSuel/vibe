@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login.vue should set a value for the doctor 1`] = `
+<section class="conteiner patient">
+  <h1 class="patient__title">Olá </h1>
+  <div class="card">
+    <div class="flex">
+      <transition-stub name="fade" mode="out-in">
+        <listdoctor-stub></listdoctor-stub>
+      </transition-stub>
+    </div>
+  </div>
+  <div class="card history">
+    <h2>Historico</h2>
+    <div class="flex">
+      <date-picker-stub value="Sun Sep 27 2020 23:43:58 GMT-0300 (GMT-03:00)" defaultvalue="Sun Sep 27 2020 00:00:00 GMT-0300 (GMT-03:00)" disableddate="function _default() {
+          return false;
+        }" type="date" getclasses="function _default() {
+          return [];
+        }" titleformat="YYYY-MM-DD" format="DD/MM/YYYY" timetitleformat="YYYY-MM-DD" disabledtime="function _default() {
+          return false;
+        }" hourstep="1" minutestep="1" secondstep="1" scrollduration="100" valuetype="date" rangeseparator=" ~ " placeholder="Escolher uma data" editable="true" clearable="true" prefixclass="mx" inputclass="mx-input" inputattr="[object Object]" appendtobody="true" popupstyle="[object Object]" confirmtext="OK" shortcuts=""></date-picker-stub> <button>Buscar</button>
+    </div>
+    <ul class="list"></ul>
+  </div>
+</section>
+`;

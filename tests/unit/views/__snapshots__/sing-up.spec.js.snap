@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingUp.vue should change the input to cpf 1`] = `
+<div class="register">
+  <h1 class="register__title">Cadastre-se</h1>
+  <kindperson-stub></kindperson-stub>
+  <section class="register__card card">
+    <form class="register__form"><input type="text" placeholder="Nome">
+      <!---->
+      <date-picker-stub value="Sun Sep 27 2020 23:43:58 GMT-0300 (GMT-03:00)" defaultvalue="Sun Sep 27 2020 00:00:00 GMT-0300 (GMT-03:00)" disableddate="function () { [native code] }" type="date" getclasses="function _default() {
+          return [];
+        }" titleformat="YYYY-MM-DD" format="DD/MM/YYYY" timetitleformat="YYYY-MM-DD" disabledtime="function _default() {
+          return false;
+        }" hourstep="1" minutestep="1" secondstep="1" scrollduration="100" valuetype="date" rangeseparator=" ~ " placeholder="Data de Nascimento" editable="true" clearable="true" prefixclass="mx" inputclass="mx-input" inputattr="[object Object]" appendtobody="true" popupstyle="[object Object]" confirmtext="OK" shortcuts=""></date-picker-stub>
+      <!---->
+      <div class="register__form__radio"><span><input id="masculino" type="radio" value="m"> <label for="masculino">Masculino</label></span> <span><input id="feminino" type="radio" value="f"> <label for="feminino">Feminino</label></span></div> <input type="text" placeholder="CRM" class="">
+      <!----> <button type="submit" class="button-primary">Cadastrar</button>
+    </form>
+  </section>
+  <div class="register__login">
+    <router-link-stub to="/">Já tenho conta!</router-link-stub>
+  </div>
+</div>
+`;

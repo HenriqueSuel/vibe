@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login.vue should change the input to cpf 1`] = `
+<div class="login">
+  <h1 class="login__title">Entrar na minha conta</h1>
+  <kindperson-stub></kindperson-stub>
+  <section class="card">
+    <form class="login__form"><input type="text" placeholder="CRM">
+      <!----> <button type="submit" class="login__form__submit button-primary">
+        Entrar
+      </button>
+    </form>
+  </section>
+  <div class="login__register">
+    <router-link-stub to="/cadastro">Cadastra-se</router-link-stub>
+  </div>
+</div>
+`;

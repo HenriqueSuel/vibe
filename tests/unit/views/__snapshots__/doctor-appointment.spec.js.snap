@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoctorAppointment.vue should change the input to cpf 1`] = `
+<section class="container">
+  <h1>Filtrar</h1>
+  <div class="card list-filter">
+    <div class="flex list-filter__inputs">
+      <date-picker-stub defaultvalue="Sun Sep 27 2020 00:00:00 GMT-0300 (GMT-03:00)" disableddate="function _default() {
+          return false;
+        }" type="date" getclasses="function _default() {
+          return [];
+        }" titleformat="YYYY-MM-DD" format="YYYY-MM-DD" timetitleformat="YYYY-MM-DD" disabledtime="function _default() {
+          return false;
+        }" hourstep="1" minutestep="1" secondstep="1" scrollduration="100" valuetype="date" range="true" rangeseparator=" ~ " placeholder="Selecionar um Periodo" editable="true" clearable="true" prefixclass="mx" inputclass="mx-input" inputattr="[object Object]" appendtobody="true" popupstyle="[object Object]" confirmtext="OK" shortcuts=""></date-picker-stub> <input type="text" placeholder="Nome do Paciente">
+    </div>
+    <div class="list-filter__checkbox"><span><input type="checkbox" name="Falta" id="Falta" value="true"> <label for="Falta">Falta</label></span><span><input type="checkbox" name="Cancelado" id="Cancelado" value="true"> <label for="Cancelado">Cancelado</label></span><span><input type="checkbox" name="Agendado" id="Agendado" value="true"> <label for="Agendado">Agendado</label></span><span><input type="checkbox" name="Realizada" id="Realizada" value="true"> <label for="Realizada">Realizada</label></span><span><input type="checkbox" name="Concluido" id="Concluido" value="true"> <label for="Concluido">Concluido</label></span></div>
+    <div class="list-filter__button"><button class="button-primary">Buscar</button></div>
+  </div>
+  <section class="card">
+    <div class="list-patient">
+      <h1>Historico</h1>
+    </div>
+  </section>
+</section>
+`;
