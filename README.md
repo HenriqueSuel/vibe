@@ -1,34 +1,30 @@
 # vibe-saude
 
-## Project setup
+Você pode usar o npm ou yarn. 
+Lembrando que npm você vai usar o `npm run COMANDO` para rodar.
+
+
+## Como instalar o projeto
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Como rodar o projeto local
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Como fazer o build do projeto
 ```
 yarn build
 ```
 
-### Run your unit tests
+### Como rodar os teste unitarios
 ```
 yarn test:unit
 ```
 
-### Run your end-to-end tests
+### Como rodar os teste e2e
 ```
 yarn test:e2e
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
