@@ -1,0 +1,15 @@
+.list {
+  margin-top: 16px;
+  li {
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    padding: 0 16px;
+    list-style: none;
+    height: 48px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+}
