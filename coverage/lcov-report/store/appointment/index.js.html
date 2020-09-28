@@ -426,8 +426,6 @@ export default {
       &amp;&amp; appointment.idUser === idUser
     )),
     filterAppointment: (state) =&gt; ({ period, name, status }) =&gt; {
-      // eslint-disable-next-line no-debugger
-      debugger;
       const isFilterStatus = status.some((statusActive) =&gt; statusActive.value);
       return state.listAppointment.filter((appointment) =&gt; appointment.nameUser.toLowerCase().indexOf(name.toLowerCase()) &gt; -1
         &amp;&amp; ((!period || period.length &lt; 2) || isWithinInterval(appointment.data, { start: period[0], end: new Date(period[1].setHours(23, 59, 59, 0)) }))
