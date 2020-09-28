@@ -1,4 +1,4 @@
-# vibe-saude
+# Vibe Saude
 
 Você pode usar o npm ou yarn. 
 Lembrando que npm você vai usar o `npm run COMANDO` para rodar.
