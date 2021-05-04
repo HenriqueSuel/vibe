@@ -1,9 +1,13 @@
 name: CD Workflow
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, homolog, production]
+  pull_request:
+    types: [opened]
 
 jobs:
-  test:
+  build:
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-18.04
     strategy:
