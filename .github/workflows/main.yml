@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Pegar o nome da branch atual
       shell: bash
-      run: echo "::set-output name=current_branch::${GITHUB_REF#refs/heads/}"
+      run: echo "::set-output name=current_branch::${{GITHUB_REF#refs/heads/}} - ${{github.event_name}}"
       id: branch_ref
 
     - name: Instalar o node version ${{ matrix.node-version }}
