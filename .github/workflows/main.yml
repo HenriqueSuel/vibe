@@ -4,7 +4,7 @@ on:
   push:
     branches: [master, homolog, production]
   pull_request:
-    types: [opened]
+    branches: ['**']
 
 jobs:
   build:
