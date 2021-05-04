@@ -1,0 +1,30 @@
+name: CD Workflow
+
+on: 
+  pull_request:
+    types: [opened]
+
+jobs: 
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 1
+      matrix:
+        node-version: [14.x]
+    steps:
+      - name: Pegar o nome da branch atual
+        shell: bash
+        run: echo "::set-output name=current_branch::${GITHUB_REF#refs/heads/}"
+        id: branch_ref
+
+      - name: Instalar o node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+        
+      - name: NPM Install
+        run:
+          npm install
+
+      - name: Rodar teste
+        run: npm run test:unit
